@@ -12,10 +12,10 @@ class Solution:
             
             grid[r][c] = 'W'
            
-            dfs(r - 1, c)  # up
-            dfs(r + 1, c)  # down
-            dfs(r, c - 1)  # left
-            dfs(r, c + 1)  # right
+            dfs(r - 1, c)  
+            dfs(r + 1, c)  
+            dfs(r, c - 1)  
+            dfs(r, c + 1) 
 
         island_count = 0
 
@@ -33,14 +33,14 @@ class Solution:
 solution = Solution()
 
 grid1 = [["L", "L", "L", "L", "W"], ["L", "L", "W", "L", "W"], ["L", "L", "W", "W", "W"], ["W", "W", "W", "W", "W"]]
-print(solution.getTotalIsles(grid1))  # Output: 1
+print(solution.getTotalIsles(grid1))  
 
 
 grid2 = [["L", "L", "W", "W", "W"], ["L", "L", "W", "W", "W"], ["W", "W", "L", "W", "W"], ["W", "W", "W", "L", "L"]]
-print(solution.getTotalIsles(grid2))  # Output: 3
+print(solution.getTotalIsles(grid2))  
 
-print(numIslands(grid1))  # Output: 1
+print(numIslands(grid1))  
 
 
 grid2 = [["L","L","W","W","W"], ["L","L","W","W","W"], ["W","W","L","W","W"], ["W","W","W","L","L"]]
-print(numIslands(grid2))  # Output: 3
+print(numIslands(grid2))  
